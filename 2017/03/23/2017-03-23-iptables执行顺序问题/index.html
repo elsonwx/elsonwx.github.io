@@ -24,7 +24,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="iptables执行顺序问题">
 <meta property="og:url" content="https://elsonwx.com/2017/03/23/2017-03-23-iptables%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F%E9%97%AE%E9%A2%98/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="elsonwx">
 <meta property="og:description" content="情景：只对某一个ip开放端口，其他ip访问此端口拒绝 12iptables -A INPUT -s 开放的ip -p tcp --dport 端口 -j ACCEPTiptables -A INPUT -p tcp --dport 端口 -j DROP 关于这两条的执行顺序，容易弄混。经测试发现，一定要先ACCEPT这个ip，再DROP掉其他ip，才能达到预期效果。 Each rule in a">
 <meta property="og:locale">
 <meta property="article:published_time" content="2017-03-23T07:22:26.000Z">
@@ -46,7 +46,7 @@
   };
 </script>
 
-  <title>iptables执行顺序问题 | Hexo</title>
+  <title>iptables执行顺序问题 | elsonwx</title>
   
 
 
@@ -97,7 +97,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Hexo</h1>
+      <h1 class="site-title">elsonwx</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -190,7 +190,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="elsonwx">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
